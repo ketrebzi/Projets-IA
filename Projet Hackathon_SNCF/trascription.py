@@ -17,7 +17,7 @@ def transcribe(audio_filepath, prompt: str) -> str:
     )
     return transcript.text
 
-client = OpenAI(api_key=os.environ.get("", ""))
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", "sk-proj-YbZ36JrsG4A12fcZwH4WT3BlbkFJJVVqReMvpAtsO5Jp0CdJ"))
 
 
 #Prompte pour guider le model whisper dans sa transcription 
